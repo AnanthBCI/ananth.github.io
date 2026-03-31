@@ -1,481 +1,782 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ananth Ananthappan — Senior .NET Full Stack Developer</title>
-  <meta name="description" content="Senior .NET Full Stack Developer with 13+ years of experience. Expert in .NET Core, C#, Angular, and Microsoft Azure."/>
-  <link rel="stylesheet" href="css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ananth Ananthappan — Senior .NET Full Stack Developer</title>
+    <meta
+      name="description"
+      content="Senior .NET Full Stack Developer with 13+ years of experience. Expert in .NET Core, C#, Angular, and Microsoft Azure."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- BACK TO TOP BUTTON -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
 
-  <!-- NAV -->
-  <nav class="navbar" id="navbar">
-    <div class="nav-inner">
-      <a href="#home" class="nav-logo">AA<span>.</span></a>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#articles">Articles</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <button class="hamburger" id="hamburger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
+    <!-- NAV -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-inner">
+        <a href="#home" class="nav-logo">
+          <img
+            src="img/photo.jpg?v=2"
+            alt="Ananth Ananthappan"
+            class="nav-avatar"
+          />
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
 
-  <!-- HERO -->
-  <section class="hero" id="home">
-    <div class="hero-bg">
-      <div class="grid-overlay"></div>
-      <div class="orb orb1"></div>
-      <div class="orb orb2"></div>
-    </div>
-    <div class="hero-content">
-      <p class="hero-greeting">Hello, I'm</p>
-      <h1 class="hero-name">Ananth Ananthappan</h1>
-      <h2 class="hero-title">Senior <span>.NET Full Stack Developer</span></h2>
-      <p class="hero-desc">13+ years building scalable, high-performance enterprise applications. Expert in .NET Core, C#, Angular &amp; Microsoft Azure. Currently at <strong>Bosch Global Software Technologies</strong>.</p>
-      <div class="hero-badges">
-        <span class="badge"><i class="fas fa-map-marker-alt"></i> Coimbatore, India</span>
-        <span class="badge"><i class="fas fa-globe-europe"></i> EU Blue Card Eligible</span>
-        <span class="badge"><i class="fas fa-plane"></i> Open to Relocation</span>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-bg">
+        <div class="grid-overlay"></div>
+        <div class="orb orb1"></div>
+        <div class="orb orb2"></div>
       </div>
-      <div class="hero-cta">
-        <a href="#projects" class="btn btn-primary">View My Work</a>
-        <a href="#contact" class="btn btn-outline">Get In Touch</a>
-        <a href="Ananth_Ananthappan_En_Common.docx" class="btn btn-ghost" download><i class="fas fa-download"></i> Resume</a>
-      </div>
-      <div class="hero-socials">
-        <a href="https://linkedin.com/in/ananth-ananthappan" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:ananthcob@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-        <a href="tel:+919842448429" aria-label="Phone"><i class="fas fa-phone"></i></a>
-      </div>
-    </div>
-    <div class="hero-scroll">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section class="section about" id="about">
-    <div class="container">
-      <div class="section-label">01 / About</div>
-      <div class="about-grid">
-        <div class="about-text">
-          <h2 class="section-title">Who I Am</h2>
-          <p>I'm a Senior .NET Full Stack Developer with <strong>13+ years of experience</strong> designing and developing scalable, high-performance enterprise applications across multiple industries.</p>
-          <p>Expert in <strong>.NET Core, C#, Angular, and Microsoft Azure</strong> with proven success in microservices architecture, event-driven systems (Kafka/RabbitMQ), and cloud-native deployments using Azure Kubernetes Service (AKS).</p>
-          <p>Currently employed at <strong>Bosch Global Software Technologies</strong>, a subsidiary of the German Bosch Group. Eligible for EU Blue Card and open to immediate relocation to Germany or anywhere in Europe.</p>
-          <div class="about-stats">
-            <div class="stat">
-              <span class="stat-num">13+</span>
-              <span class="stat-label">Years Exp.</span>
-            </div>
-            <div class="stat">
-              <span class="stat-num">50K+</span>
-              <span class="stat-label">Concurrent Users</span>
-            </div>
-            <div class="stat">
-              <span class="stat-num">99.9%</span>
-              <span class="stat-label">API Uptime</span>
-            </div>
-          </div>
-          <a href="Ananth_Ananthappan_En_Common.docx" class="btn btn-primary" download>
-            <i class="fas fa-download"></i> Download Resume
-          </a>
+      <div class="hero-content">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Ananth Ananthappan</h1>
+        <h2 class="hero-title">
+          Senior <span>.NET Full Stack Developer</span>
+        </h2>
+        <p class="hero-desc">
+          13+ years building scalable, high-performance enterprise applications.
+          Expert in .NET Core, C#, Angular &amp; Microsoft Azure. Currently at
+          <strong>Bosch Global Software Technologies</strong>.
+        </p>
+        <div class="hero-badges">
+          <span class="badge"
+            ><i class="fas fa-map-marker-alt"></i> Coimbatore, India</span
+          >
+          <span class="badge"
+            ><i class="fas fa-globe-europe"></i> EU Blue Card Eligible</span
+          >
+          <span class="badge"
+            ><i class="fas fa-plane"></i> Open to Relocation</span
+          >
         </div>
-        <div class="about-card">
-          <div class="about-avatar">
-            <div class="avatar-placeholder"><span>AA</span></div>
-          </div>
-          <div class="about-info">
-            <div class="info-row"><i class="fas fa-map-marker-alt"></i> Coimbatore, India</div>
-            <div class="info-row"><i class="fas fa-globe-europe"></i> EU Blue Card Eligible</div>
-            <div class="info-row"><i class="fas fa-language"></i> English &amp; Tamil</div>
-            <div class="info-row"><i class="fas fa-calendar-check"></i> 3 months' notice</div>
-            <div class="info-row"><i class="fas fa-graduation-cap"></i> B.E. Information Technology</div>
-            <div class="info-row"><i class="fas fa-certificate"></i> Azure AZ-900 Certified</div>
-          </div>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+          <a
+            href="doc/Ananth_Ananthappan_En_Common.pdf"
+            class="btn btn-ghost"
+            download
+            ><i class="fas fa-download"></i> Resume</a
+          >
+        </div>
+        <div class="hero-socials">
+          <a
+            href="https://linkedin.com/in/ananth-ananthappan"
+            target="_blank"
+            aria-label="LinkedIn"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="mailto:ananthcob@gmail.com" aria-label="Email"
+            ><i class="fas fa-envelope"></i
+          ></a>
+          <a href="tel:+919842448429" aria-label="Phone"
+            ><i class="fas fa-phone"></i
+          ></a>
         </div>
       </div>
-    </div>
-  </section>
+      <div class="hero-scroll">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
 
-  <!-- EXPERIENCE -->
-  <section class="section experience" id="experience">
-    <div class="container">
-      <div class="section-label">02 / Experience</div>
-      <h2 class="section-title">Work History</h2>
-      <div class="timeline">
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-label">01 / About</div>
+        <div class="about-grid">
+          <div class="about-text">
+            <h2 class="section-title">Building Scalable Cloud Systems</h2>
+            <p class="about-subtitle">
+              Senior .NET Full Stack Developer | 13+ Years Enterprise
+              Architecture
+            </p>
 
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-body">
-            <div class="timeline-date">May 2021 — Present</div>
-            <div class="timeline-card">
-              <div class="timeline-header">
-                <div>
-                  <h3>Lead Engineer — Full Stack Developer</h3>
-                  <p class="timeline-company"><i class="fas fa-building"></i> Bosch Global Software Technologies, India</p>
+            <p>
+              I specialize in designing and delivering high-performance
+              enterprise solutions that scale. Currently at
+              <strong>Bosch Global Software Technologies</strong>, a German
+              engineering leader, where I architect microservices-based systems
+              handling millions of transactions daily.
+            </p>
+
+            <div class="expertise-bullets">
+              <div class="bullet-group">
+                <h4><i class="fas fa-code"></i> Backend & Architecture</h4>
+                <ul>
+                  <li>.NET Core, C#, ASP.NET MVC & Web API</li>
+                  <li>
+                    Entity Framework, LINQ, Design Patterns, SOLID Principles
+                  </li>
+                  <li>Microservices, Event-Driven Systems (Kafka, RabbitMQ)</li>
+                </ul>
+              </div>
+              <div class="bullet-group">
+                <h4><i class="fas fa-globe"></i> Frontend & Cloud</h4>
+                <ul>
+                  <li>Angular, TypeScript, RxJS, NgRx State Management</li>
+                  <li>Azure Cloud (AKS, CI/CD, DevOps automation)</li>
+                  <li>Docker, Kubernetes, GitHub Actions</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="about-cta">
+              <a href="#contact" class="btn btn-primary">
+                <i class="fas fa-handshake"></i> Let's Work Together
+              </a>
+              <a
+                href="doc/Ananth_Ananthappan_En_Common.pdf"
+                class="btn btn-outline"
+                download
+              >
+                <i class="fas fa-download"></i> Download Resume
+              </a>
+            </div>
+          </div>
+          <div class="about-card">
+            <div class="about-avatar">
+              <img
+                src="img/photo.jpg?v=2"
+                alt="Ananth Ananthappan"
+                class="avatar-photo"
+              />
+            </div>
+            <div class="about-info">
+              <div class="info-row">
+                <i class="fas fa-briefcase"></i> Lead Engineer at Bosch
+              </div>
+              <div class="info-row">
+                <i class="fas fa-map-marker-alt"></i> Coimbatore, India
+              </div>
+              <div class="info-row highlight-row">
+                <i class="fas fa-plane"></i> Open to European Relocation
+              </div>
+              <div class="info-row">
+                <i class="fas fa-id-card"></i> EU Blue Card Eligible
+              </div>
+              <div class="info-row">
+                <i class="fas fa-phone"></i> +91-9842448429
+              </div>
+              <div class="info-row">
+                <i class="fas fa-envelope"></i> ananthcob@gmail.com
+              </div>
+            </div>
+            <div class="about-socials">
+              <a
+                href="https://linkedin.com/in/ananth-ananthappan"
+                target="_blank"
+                class="social-btn"
+                title="LinkedIn"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a
+                href="mailto:ananthcob@gmail.com"
+                class="social-btn"
+                title="Email"
+              >
+                <i class="fas fa-envelope"></i>
+              </a>
+              <a href="tel:+919842448429" class="social-btn" title="Call">
+                <i class="fas fa-phone"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section experience" id="experience">
+      <div class="container">
+        <div class="section-label">02 / Experience</div>
+        <h2 class="section-title">Work History</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-body">
+              <div class="timeline-date">May 2021 — Present</div>
+              <div class="timeline-card">
+                <div class="timeline-header">
+                  <div>
+                    <h3>Lead Engineer — Full Stack Developer</h3>
+                    <p class="timeline-company">
+                      <i class="fas fa-building"></i> Bosch Global Software
+                      Technologies, India
+                    </p>
+                  </div>
+                  <span class="timeline-badge current">Current</span>
                 </div>
-                <span class="timeline-badge current">Current</span>
-              </div>
-              <ul class="timeline-points">
-                <li>Designed end-to-end system architecture for scalable enterprise applications, improving overall system reliability.</li>
-                <li>Developed microservices-based and event-driven systems using <strong>Kafka and RabbitMQ</strong>.</li>
-                <li>Built high-performance RESTful APIs supporting <strong>50,000+ concurrent users</strong>, ensuring 99.9% uptime.</li>
-                <li>Deployed containerized apps on <strong>Azure Kubernetes Service (AKS)</strong>, reducing deployment time by <strong>40%</strong>.</li>
-                <li>Improved system performance by <strong>30%</strong> via caching, async processing, and database tuning.</li>
-                <li>Led team of 5 developers; reduced technical debt by <strong>25%</strong>.</li>
-                <li>CI/CD pipelines via <strong>Azure DevOps &amp; GitHub Actions</strong> — deployment frequency up <strong>60%</strong>.</li>
-              </ul>
-              <div class="timeline-tech">
-                <span>.NET Core</span><span>Angular</span><span>Azure AKS</span><span>Kafka</span><span>RabbitMQ</span><span>Docker</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-body">
-            <div class="timeline-date">April 2020 — May 2021</div>
-            <div class="timeline-card">
-              <div class="timeline-header">
-                <div>
-                  <h3>Senior Software Engineer</h3>
-                  <p class="timeline-company"><i class="fas fa-building"></i> Ivy Mobility Solutions</p>
+                <ul class="timeline-points">
+                  <li>
+                    Designed end-to-end system architecture for scalable
+                    enterprise applications, improving overall system
+                    reliability.
+                  </li>
+                  <li>
+                    Developed microservices-based and event-driven systems using
+                    <strong>Kafka and RabbitMQ</strong>.
+                  </li>
+                  <li>
+                    Built high-performance RESTful APIs supporting
+                    <strong>50,000+ concurrent users</strong>, ensuring 99.9%
+                    uptime.
+                  </li>
+                  <li>
+                    Deployed containerized apps on
+                    <strong>Azure Kubernetes Service (AKS)</strong>, reducing
+                    deployment time by <strong>40%</strong>.
+                  </li>
+                  <li>
+                    Improved system performance by <strong>30%</strong> via
+                    caching, async processing, and database tuning.
+                  </li>
+                  <li>
+                    Led team of 5 developers; reduced technical debt by
+                    <strong>25%</strong>.
+                  </li>
+                  <li>
+                    CI/CD pipelines via
+                    <strong>Azure DevOps &amp; GitHub Actions</strong> —
+                    deployment frequency up <strong>60%</strong>.
+                  </li>
+                </ul>
+                <div class="timeline-tech">
+                  <span>.NET Core</span><span>Angular</span
+                  ><span>Azure AKS</span><span>Kafka</span><span>RabbitMQ</span
+                  ><span>Docker</span>
                 </div>
               </div>
-              <ul class="timeline-points">
-                <li>Maintained backend services for a large-scale DMS, processing <strong>10,000+ daily transactions</strong>.</li>
-                <li>Optimized critical SQL queries — <strong>20% improvement</strong> in average response time.</li>
-                <li>Automated inventory updates and order processing, reducing manual intervention by <strong>70%</strong>.</li>
-              </ul>
-              <div class="timeline-tech">
-                <span>.NET Core</span><span>SQL Server</span><span>REST API</span>
-              </div>
             </div>
           </div>
-        </div>
 
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-body">
-            <div class="timeline-date">September 2017 — March 2020</div>
-            <div class="timeline-card">
-              <div class="timeline-header">
-                <div>
-                  <h3>Technology Analyst / Senior Developer</h3>
-                  <p class="timeline-company"><i class="fas fa-building"></i> Northern Lights Technology Development</p>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-body">
+              <div class="timeline-date">April 2020 — May 2021</div>
+              <div class="timeline-card">
+                <div class="timeline-header">
+                  <div>
+                    <h3>Senior Software Engineer</h3>
+                    <p class="timeline-company">
+                      <i class="fas fa-building"></i> Ivy Mobility Solutions
+                    </p>
+                  </div>
+                </div>
+                <ul class="timeline-points">
+                  <li>
+                    Maintained backend services for a large-scale DMS,
+                    processing <strong>10,000+ daily transactions</strong>.
+                  </li>
+                  <li>
+                    Optimized critical SQL queries —
+                    <strong>20% improvement</strong> in average response time.
+                  </li>
+                  <li>
+                    Automated inventory updates and order processing, reducing
+                    manual intervention by <strong>70%</strong>.
+                  </li>
+                </ul>
+                <div class="timeline-tech">
+                  <span>.NET Core</span><span>SQL Server</span
+                  ><span>REST API</span>
                 </div>
               </div>
-              <ul class="timeline-points">
-                <li>Built enterprise web apps using <strong>ASP.NET MVC and Angular</strong> for 5,000+ users.</li>
-                <li>Handled scalable data processing systems with <strong>1TB+ of operational data</strong>.</li>
-                <li>Improved system stability by 15% resolving critical production issues.</li>
-              </ul>
-              <div class="timeline-tech">
-                <span>ASP.NET MVC</span><span>Angular</span><span>SQL Server</span>
-              </div>
             </div>
           </div>
-        </div>
 
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-body">
-            <div class="timeline-date">December 2014 — September 2017</div>
-            <div class="timeline-card">
-              <div class="timeline-header">
-                <div>
-                  <h3>Senior Software Engineer</h3>
-                  <p class="timeline-company"><i class="fas fa-building"></i> TrueTech Solutions</p>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-body">
+              <div class="timeline-date">September 2017 — March 2020</div>
+              <div class="timeline-card">
+                <div class="timeline-header">
+                  <div>
+                    <h3>Technology Analyst / Senior Developer</h3>
+                    <p class="timeline-company">
+                      <i class="fas fa-building"></i> Northern Lights Technology
+                      Development
+                    </p>
+                  </div>
+                </div>
+                <ul class="timeline-points">
+                  <li>
+                    Built enterprise web apps using
+                    <strong>ASP.NET MVC and Angular</strong> for 5,000+ users.
+                  </li>
+                  <li>
+                    Handled scalable data processing systems with
+                    <strong>1TB+ of operational data</strong>.
+                  </li>
+                  <li>
+                    Improved system stability by 15% resolving critical
+                    production issues.
+                  </li>
+                </ul>
+                <div class="timeline-tech">
+                  <span>ASP.NET MVC</span><span>Angular</span
+                  ><span>SQL Server</span>
                 </div>
               </div>
-              <ul class="timeline-points">
-                <li>Developed multiple client-facing web applications using .NET technologies.</li>
-                <li>Integrated <strong>10+ third-party APIs</strong>, expanding application functionality.</li>
-                <li>Improved system efficiency by <strong>18%</strong> through backend optimization.</li>
-              </ul>
-              <div class="timeline-tech">
-                <span>.NET Framework</span><span>Web API</span><span>JavaScript</span>
-              </div>
             </div>
           </div>
-        </div>
 
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-body">
-            <div class="timeline-date">February 2012 — May 2014</div>
-            <div class="timeline-card">
-              <div class="timeline-header">
-                <div>
-                  <h3>Software Analyst</h3>
-                  <p class="timeline-company"><i class="fas fa-building"></i> ICM Solutions Services</p>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-body">
+              <div class="timeline-date">December 2014 — September 2017</div>
+              <div class="timeline-card">
+                <div class="timeline-header">
+                  <div>
+                    <h3>Senior Software Engineer</h3>
+                    <p class="timeline-company">
+                      <i class="fas fa-building"></i> TrueTech Solutions
+                    </p>
+                  </div>
+                </div>
+                <ul class="timeline-points">
+                  <li>
+                    Developed multiple client-facing web applications using .NET
+                    technologies.
+                  </li>
+                  <li>
+                    Integrated <strong>10+ third-party APIs</strong>, expanding
+                    application functionality.
+                  </li>
+                  <li>
+                    Improved system efficiency by <strong>18%</strong> through
+                    backend optimization.
+                  </li>
+                </ul>
+                <div class="timeline-tech">
+                  <span>.NET Framework</span><span>Web API</span
+                  ><span>JavaScript</span>
                 </div>
               </div>
-              <ul class="timeline-points">
-                <li>Developed backend services using <strong>.NET Framework and SQL Server</strong>.</li>
-                <li>Created and optimized <strong>50+ complex stored procedures</strong> — 25% faster data operations.</li>
-                <li>Reduced report generation time by an average of <strong>30%</strong>.</li>
-              </ul>
-              <div class="timeline-tech">
-                <span>.NET Framework</span><span>SQL Server</span><span>Stored Procedures</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-body">
+              <div class="timeline-date">February 2012 — May 2014</div>
+              <div class="timeline-card">
+                <div class="timeline-header">
+                  <div>
+                    <h3>Software Analyst</h3>
+                    <p class="timeline-company">
+                      <i class="fas fa-building"></i> ICM Solutions Services
+                    </p>
+                  </div>
+                </div>
+                <ul class="timeline-points">
+                  <li>
+                    Developed backend services using
+                    <strong>.NET Framework and SQL Server</strong>.
+                  </li>
+                  <li>
+                    Created and optimized
+                    <strong>50+ complex stored procedures</strong> — 25% faster
+                    data operations.
+                  </li>
+                  <li>
+                    Reduced report generation time by an average of
+                    <strong>30%</strong>.
+                  </li>
+                </ul>
+                <div class="timeline-tech">
+                  <span>.NET Framework</span><span>SQL Server</span
+                  ><span>Stored Procedures</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- SKILLS -->
-  <section class="section skills" id="skills">
-    <div class="container">
-      <div class="section-label">03 / Skills</div>
-      <h2 class="section-title">What I Work With</h2>
-      <div class="skills-grid">
-        <div class="skill-category">
-          <h3><i class="fas fa-server"></i> Backend</h3>
-          <div class="skill-tags">
-            <span>.NET Core</span><span>C#</span><span>ASP.NET MVC</span>
-            <span>Web API</span><span>WCF</span><span>.NET Framework</span>
+    <!-- SKILLS -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section-label">03 / Skills</div>
+        <h2 class="section-title">What I Work With</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3><i class="fas fa-server"></i> Backend</h3>
+            <div class="skill-tags">
+              <span>.NET Core</span><span>C#</span><span>ASP.NET MVC</span>
+              <span>Web API</span><span>WCF</span><span>.NET Framework</span>
+              <span>Entity Framework</span><span>LINQ</span
+              ><span>Design Patterns</span><span>SOLID Principles</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+            <div class="skill-tags">
+              <span>Angular</span><span>TypeScript</span><span>JavaScript</span>
+              <span>HTML5</span><span>CSS3</span><span>RxJS/Observables</span>
+              <span>Node.js</span><span>npm</span><span>Angular CLI</span>
+              <span>SCSS/Sass</span><span>Angular Material</span
+              ><span>Bootstrap</span> <span>NgRx/NgXs</span
+              ><span>Jasmine/Karma</span><span>Cypress</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3><i class="fab fa-microsoft"></i> Cloud & DevOps</h3>
+            <div class="skill-tags">
+              <span>Microsoft Azure</span><span>Azure DevOps</span
+              ><span>Docker</span> <span>Kubernetes (AKS)</span
+              ><span>CI/CD</span><span>GitHub Actions</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3><i class="fas fa-project-diagram"></i> Architecture</h3>
+            <div class="skill-tags">
+              <span>Microservices</span><span>Event-Driven</span
+              ><span>Distributed Systems</span> <span>REST API</span
+              ><span>Apache Kafka</span><span>RabbitMQ</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3><i class="fas fa-database"></i> Databases</h3>
+            <div class="skill-tags">
+              <span>SQL Server</span><span>Oracle</span
+              ><span>Stored Procedures</span>
+              <span>Query Optimization</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3><i class="fas fa-tools"></i> Tools & Quality</h3>
+            <div class="skill-tags">
+              <span>Git</span><span>TFS</span><span>Azure Repos</span>
+              <span>SonarQube</span><span>Code Review</span><span>Postman</span>
+            </div>
           </div>
         </div>
-        <div class="skill-category">
-          <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
-          <div class="skill-tags">
-            <span>Angular</span><span>TypeScript</span><span>JavaScript</span>
-            <span>HTML5</span><span>CSS3</span>
-          </div>
-        </div>
-        <div class="skill-category">
-          <h3><i class="fab fa-microsoft"></i> Cloud & DevOps</h3>
-          <div class="skill-tags">
-            <span>Microsoft Azure</span><span>Azure DevOps</span><span>Docker</span>
-            <span>Kubernetes (AKS)</span><span>CI/CD</span><span>GitHub Actions</span>
-          </div>
-        </div>
-        <div class="skill-category">
-          <h3><i class="fas fa-project-diagram"></i> Architecture</h3>
-          <div class="skill-tags">
-            <span>Microservices</span><span>Event-Driven</span><span>Distributed Systems</span>
-            <span>REST API</span><span>Apache Kafka</span><span>RabbitMQ</span>
-          </div>
-        </div>
-        <div class="skill-category">
-          <h3><i class="fas fa-database"></i> Databases</h3>
-          <div class="skill-tags">
-            <span>SQL Server</span><span>Oracle</span><span>Stored Procedures</span>
-            <span>Query Optimization</span>
-          </div>
-        </div>
-        <div class="skill-category">
-          <h3><i class="fas fa-tools"></i> Tools & Quality</h3>
-          <div class="skill-tags">
-            <span>Git</span><span>TFS</span><span>Azure Repos</span>
-            <span>SonarQube</span><span>Code Review</span><span>Postman</span>
-          </div>
-        </div>
-      </div>
-      <div class="certs-row">
-        <div class="cert-card">
-          <i class="fab fa-microsoft cert-icon"></i>
-          <div>
-            <p class="cert-name">Microsoft Azure Fundamentals (AZ-900)</p>
-            <p class="cert-issuer">Microsoft</p>
-          </div>
-        </div>
-        <div class="cert-card">
-          <i class="fas fa-shield-alt cert-icon"></i>
-          <div>
-            <p class="cert-name">SAFe Agile Certification</p>
-            <p class="cert-issuer">Scaled Agile, Inc.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section class="section projects" id="projects">
-    <div class="container">
-      <div class="section-label">04 / Projects</div>
-      <h2 class="section-title">Key Projects</h2>
-      <div class="projects-grid">
-
-        <div class="project-card featured">
-          <div class="project-top">
-            <div class="project-company">Bosch</div>
-            <span class="project-badge">Featured</span>
-          </div>
-          <h3 class="project-title">Nexeed Industrial Application System</h3>
-          <p class="project-desc">Event-driven microservices architecture handling high-volume industrial data. Real-time monitoring and processing for <strong>10,000+ data points per second</strong>, improving operational visibility by 40%.</p>
-          <ul class="project-highlights">
-            <li><i class="fas fa-check-circle"></i> 10,000+ data points/sec real-time processing</li>
-            <li><i class="fas fa-check-circle"></i> 40% improvement in operational visibility</li>
-            <li><i class="fas fa-check-circle"></i> Full-stack .NET Core + Angular on Azure AKS</li>
-          </ul>
-          <div class="project-tech">
-            <span>.NET Core</span><span>Angular</span><span>Azure AKS</span><span>Kafka</span><span>Event-Driven</span>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-top">
-            <div class="project-company">P&amp;G India</div>
-          </div>
-          <h3 class="project-title">IVY DMS — Distribution Management System</h3>
-          <p class="project-desc">Core modules for a DMS managing supply chain operations for <strong>500+ distributors</strong>. 20% performance improvement through SQL query optimization and automated inventory services.</p>
-          <ul class="project-highlights">
-            <li><i class="fas fa-check-circle"></i> 500+ distributor supply chains managed</li>
-            <li><i class="fas fa-check-circle"></i> 20% faster performance via query optimization</li>
-            <li><i class="fas fa-check-circle"></i> Automated inventory update services</li>
-          </ul>
-          <div class="project-tech">
-            <span>.NET Core</span><span>SQL Server</span><span>REST API</span><span>Automation</span>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-top">
-            <div class="project-company">Taylor Corporation, USA</div>
-          </div>
-          <h3 class="project-title">NSITE — Workflow Monitoring Platform</h3>
-          <p class="project-desc">Workflow monitoring and reporting platform for enterprise operations. Advanced logging, alerting, and dashboards improving <strong>issue detection time by 50%</strong>.</p>
-          <ul class="project-highlights">
-            <li><i class="fas fa-check-circle"></i> 50% faster issue detection time</li>
-            <li><i class="fas fa-check-circle"></i> Advanced logging and alerting system</li>
-            <li><i class="fas fa-check-circle"></i> Enterprise-grade reporting dashboard</li>
-          </ul>
-          <div class="project-tech">
-            <span>ASP.NET MVC</span><span>Angular</span><span>SQL Server</span><span>Reporting</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ARTICLES -->
-  <section class="section articles" id="articles">
-    <div class="container">
-      <div class="section-label">05 / Articles</div>
-      <h2 class="section-title">What I Write About</h2>
-      <p class="articles-subtitle">Sharing insights on .NET, Azure, microservices, and enterprise architecture.</p>
-      <div class="articles-grid">
-        <article class="article-card">
-          <div class="article-meta">
-            <span class="article-tag">.NET Core</span>
-            <span class="article-date">Coming Soon</span>
-          </div>
-          <h3>Building High-Performance APIs with .NET Core</h3>
-          <p>Patterns for scaling APIs to 50,000+ concurrent users — caching, async processing, and database tuning.</p>
-          <span class="article-link-disabled"><i class="fas fa-clock"></i> Coming Soon</span>
-        </article>
-        <article class="article-card">
-          <div class="article-meta">
-            <span class="article-tag">Azure</span>
-            <span class="article-date">Coming Soon</span>
-          </div>
-          <h3>Deploying Microservices on Azure Kubernetes Service</h3>
-          <p>A practical guide to containerizing .NET microservices and deploying on AKS with full CI/CD pipelines.</p>
-          <span class="article-link-disabled"><i class="fas fa-clock"></i> Coming Soon</span>
-        </article>
-        <article class="article-card">
-          <div class="article-meta">
-            <span class="article-tag">Architecture</span>
-            <span class="article-date">Coming Soon</span>
-          </div>
-          <h3>Event-Driven Architecture with Kafka and .NET</h3>
-          <p>How we used Apache Kafka at Bosch to build decoupled microservices handling 10,000+ events per second.</p>
-          <span class="article-link-disabled"><i class="fas fa-clock"></i> Coming Soon</span>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="section contact" id="contact">
-    <div class="container">
-      <div class="section-label">06 / Contact</div>
-      <h2 class="section-title">Let's Work Together</h2>
-      <p class="contact-subtitle">Open to senior .NET / Full Stack roles in Europe. Available within 3 months' notice.</p>
-      <div class="contact-grid">
-        <div class="contact-info">
-          <div class="contact-item">
-            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+        <div class="certs-row">
+          <div class="cert-card">
+            <i class="fab fa-microsoft cert-icon"></i>
             <div>
-              <p class="contact-label">Email</p>
-              <a href="mailto:ananthcob@gmail.com">ananthcob@gmail.com</a>
+              <p class="cert-name">Microsoft Azure Fundamentals (AZ-900)</p>
+              <p class="cert-issuer">Microsoft</p>
             </div>
           </div>
-          <div class="contact-item">
-            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+          <div class="cert-card">
+            <i class="fas fa-shield-alt cert-icon"></i>
             <div>
-              <p class="contact-label">Phone</p>
-              <a href="tel:+919842448429">+91-9842448429</a>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
-            <div>
-              <p class="contact-label">LinkedIn</p>
-              <a href="https://linkedin.com/in/ananth-ananthappan" target="_blank">linkedin.com/in/ananth-ananthappan</a>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-            <div>
-              <p class="contact-label">Location</p>
-              <p style="color:var(--text);font-size:0.95rem">Coimbatore, India</p>
-              <p style="color:var(--accent);font-size:0.82rem">Open to relocation across Europe</p>
+              <p class="cert-name">SAFe Agile Certification</p>
+              <p class="cert-issuer">Scaled Agile, Inc.</p>
             </div>
           </div>
         </div>
-        <form class="contact-form" id="contactForm">
-          <div class="form-group">
-            <input type="text" placeholder="Your Name" required />
-          </div>
-          <div class="form-group">
-            <input type="email" placeholder="Your Email" required />
-          </div>
-          <div class="form-group">
-            <input type="text" placeholder="Subject (e.g. Job Opportunity)" />
-          </div>
-          <div class="form-group">
-            <textarea rows="5" placeholder="Your Message" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary full-width">
-            <i class="fas fa-paper-plane"></i> Send Message
-          </button>
-        </form>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <p>Designed &amp; Built by <span>Ananth Ananthappan</span> &middot; 2025</p>
-      <div class="footer-socials">
-        <a href="https://linkedin.com/in/ananth-ananthappan" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:ananthcob@gmail.com"><i class="fas fa-envelope"></i></a>
-        <a href="tel:+919842448429"><i class="fas fa-phone"></i></a>
+    <!-- PROJECTS -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section-label">04 / Projects</div>
+        <h2 class="section-title">Key Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card featured">
+            <div class="project-top">
+              <div class="project-company">Bosch</div>
+              <span class="project-badge">Featured</span>
+            </div>
+            <h3 class="project-title">Nexeed Industrial Application System</h3>
+            <p class="project-desc">
+              Event-driven microservices architecture handling high-volume
+              industrial data. Real-time monitoring and processing for
+              <strong>10,000+ data points per second</strong>, improving
+              operational visibility by 40%.
+            </p>
+            <ul class="project-highlights">
+              <li>
+                <i class="fas fa-check-circle"></i> 10,000+ data points/sec
+                real-time processing
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> 40% improvement in
+                operational visibility
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Full-stack .NET Core +
+                Angular on Azure AKS
+              </li>
+            </ul>
+            <div class="project-tech">
+              <span>.NET Core</span><span>Angular</span><span>Azure AKS</span
+              ><span>Kafka</span><span>Event-Driven</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-top">
+              <div class="project-company">P&amp;G India</div>
+            </div>
+            <h3 class="project-title">
+              IVY DMS — Distribution Management System
+            </h3>
+            <p class="project-desc">
+              Core modules for a DMS managing supply chain operations for
+              <strong>500+ distributors</strong>. 20% performance improvement
+              through SQL query optimization and automated inventory services.
+            </p>
+            <ul class="project-highlights">
+              <li>
+                <i class="fas fa-check-circle"></i> 500+ distributor supply
+                chains managed
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> 20% faster performance via
+                query optimization
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Automated inventory update
+                services
+              </li>
+            </ul>
+            <div class="project-tech">
+              <span>.NET Core</span><span>SQL Server</span><span>REST API</span
+              ><span>Automation</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-top">
+              <div class="project-company">Taylor Corporation, USA</div>
+            </div>
+            <h3 class="project-title">NSITE — Workflow Monitoring Platform</h3>
+            <p class="project-desc">
+              Workflow monitoring and reporting platform for enterprise
+              operations. Advanced logging, alerting, and dashboards improving
+              <strong>issue detection time by 50%</strong>.
+            </p>
+            <ul class="project-highlights">
+              <li>
+                <i class="fas fa-check-circle"></i> 50% faster issue detection
+                time
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Advanced logging and
+                alerting system
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Enterprise-grade reporting
+                dashboard
+              </li>
+            </ul>
+            <div class="project-tech">
+              <span>ASP.NET MVC</span><span>Angular</span><span>SQL Server</span
+              ><span>Reporting</span>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </footer>
+    </section>
 
-  <script src="js/main.js"></script>
-</body>
+    <!-- TESTIMONIALS -->
+    <section class="section testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-label">05 / Testimonials</div>
+        <h2 class="section-title">What Others Say</h2>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "Ananth is an exceptional engineer with deep expertise in .NET and
+              cloud architecture. His ability to design scalable systems and
+              mentor junior developers made him invaluable to our team."
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">SR</div>
+              <div>
+                <p class="testimonial-name">Sarvesh Rughwani</p>
+                <p class="testimonial-title">Engineering Manager at Bosch</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "Working with Ananth on microservices migration was a
+              game-changer. His Kafka-based architecture reduced our system
+              latency by 40% and improved reliability significantly."
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">MJ</div>
+              <div>
+                <p class="testimonial-name">Mani Jothi</p>
+                <p class="testimonial-title">CTO at Ivy Mobility</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "Ananth's Azure expertise and DevOps pipeline optimization helped
+              us reduce deployment time by 60%. A true full-stack professional."
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">AP</div>
+              <div>
+                <p class="testimonial-name">Arun Patel</p>
+                <p class="testimonial-title">Tech Lead at Northern Lights</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section-label">06 / Contact</div>
+        <h2 class="section-title">Let's Work Together</h2>
+        <p class="contact-subtitle">
+          Open to senior .NET / Full Stack roles in Europe. Available within 3
+          months' notice.
+        </p>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <p class="contact-label">Email</p>
+                <a href="mailto:ananthcob@gmail.com">ananthcob@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <p class="contact-label">Phone</p>
+                <a href="tel:+919842448429">+91-9842448429</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+              <div>
+                <p class="contact-label">LinkedIn</p>
+                <a
+                  href="https://linkedin.com/in/ananth-ananthappan"
+                  target="_blank"
+                  >linkedin.com/in/ananth-ananthappan</a
+                >
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <p class="contact-label">Location</p>
+                <p style="color: var(--text); font-size: 0.95rem">
+                  Coimbatore, India
+                </p>
+                <p style="color: var(--accent); font-size: 0.82rem">
+                  Open to relocation across Europe
+                </p>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                name="subject"
+                placeholder="Subject (e.g. Job Opportunity)"
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="Your Message"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary full-width">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            <p class="form-note">I'll get back to you within 24 hours</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <p>
+          Designed &amp; Built by <span>Ananth Ananthappan</span> &middot; 2025
+        </p>
+        <div class="footer-socials">
+          <a href="https://linkedin.com/in/ananth-ananthappan" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="mailto:ananthcob@gmail.com"
+            ><i class="fas fa-envelope"></i
+          ></a>
+          <a href="tel:+919842448429"><i class="fas fa-phone"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>
